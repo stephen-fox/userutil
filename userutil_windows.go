@@ -10,7 +10,7 @@ func IsRoot() error {
 	f, err := os.Open("\\\\.\\PHYSICALDRIVE0")
 	if err != nil {
 		return UserError{
-			reason:  "The current user is not running as Administrator",
+			reason:  "the current user is not running as Administrator",
 			notRoot: true,
 		}
 	}

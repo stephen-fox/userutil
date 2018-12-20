@@ -18,14 +18,14 @@ func IsRoot() error {
 			return nil
 		}
 		return UserError{
-			reason:        "Failed to check if current user is root - " + err.Error(),
+			reason:        "failed to check if current user is root - " + err.Error(),
 			unableToCheck: true,
 		}
 	}
 
 	if currentUser.Username != "root" {
 		return UserError{
-			reason:  "The current user is not 'root'",
+			reason:  "the current user is not 'root'",
 			notRoot: true,
 		}
 	}

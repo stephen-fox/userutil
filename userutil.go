@@ -75,7 +75,7 @@ func GetYesOrNoUserInput(promptMessage string, options PromptOptions) (bool, err
 	}
 
 	return false, InputError{
-		reason:         "Please specify 'y', 'yes', 'n', or 'no'",
+		reason:         "please specify 'y', 'yes', 'n', or 'no'",
 		didNotUseYesNo: true,
 	}
 }
