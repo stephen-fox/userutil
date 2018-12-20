@@ -53,7 +53,7 @@ func main() {
 }
 ```
 
-You can also prompt for a yes no answer:
+You can also prompt for a "yes or no" answer:
 ```go
 package main
 
